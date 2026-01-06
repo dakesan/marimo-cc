@@ -15,5 +15,7 @@
     "reactive",
     "visualization",
     "analytics"
-  ]
+  ],
+  "skills": "./skills/",
+  "commands": "./commands/"
 }
