@@ -33,7 +33,7 @@ Create and edit marimo reactive notebooks with best practices.
 ### Add the marketplace to Claude Code
 
 ```bash
-# Add the marimo-cc marketplace
+# Add the cc-marimo marketplace
 /plugin marketplace add dakesan/marimo-cc
 ```
 
@@ -41,7 +41,7 @@ Create and edit marimo reactive notebooks with best practices.
 
 ```bash
 # Install the marimo-editor plugin
-/plugin install marimo-editor@marimo-marketplace
+/plugin install marimo-editor@cc-marimo
 ```
 
 ### Install from local directory
@@ -54,7 +54,7 @@ git clone https://github.com/dakesan/marimo-cc.git
 /plugin marketplace add ./marimo-cc
 
 # Install a plugin from local marketplace
-/plugin install marimo-editor@marimo-marketplace
+/plugin install marimo-editor@cc-marimo
 ```
 
 ## Usage
