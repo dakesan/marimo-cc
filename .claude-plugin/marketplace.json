@@ -2,19 +2,24 @@
   "name": "cc-marimo",
   "owner": {
     "name": "Hiroyuki Odake",
-    "email": "odake@example.com",
-    "github": "dakesan"
+    "email": "odake@example.com"
   },
   "metadata": {
-    "description": "A marketplace for marimo reactive notebook tools and skills for Claude Code",
-    "version": "1.0.0",
-    "pluginRoot": "./plugins"
+    "description": "Marimo reactive notebook skills for Claude Code - interactive data science and analytics workflows",
+    "version": "2.0.0"
   },
   "plugins": [
     {
-      "name": "marimo-editor",
-      "source": "./plugins/marimo-editor",
-      "description": "Create and edit marimo reactive notebooks with best practices. Provides comprehensive guidance for data science and analytics workflows using marimo's reactive programming model."
+      "name": "marimo-skills",
+      "description": "Marimo reactive notebook skills for data science workflows",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/marimo-editor",
+        "./skills/marimo-serve",
+        "./skills/marimo-inspect"
+      ],
+      "commands": "./commands/"
     }
   ]
 }
