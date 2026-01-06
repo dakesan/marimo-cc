@@ -1,7 +1,0 @@
-{
-  "name": "marimo-cc",
-  "description": "Marimo reactive notebook integration for Claude Code - Create, edit, and analyze data with marimo notebooks",
-  "version": "1.0.0",
-  "author": "Hiroyuki Odake (@dakesan)",
-  "repository": "https://github.com/dakesan/marimo-cc"
-}

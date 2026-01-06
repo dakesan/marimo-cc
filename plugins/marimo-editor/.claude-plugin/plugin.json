@@ -1,0 +1,16 @@
+{
+  "name": "marimo-editor",
+  "description": "Create and edit marimo reactive notebooks with best practices. Provides comprehensive guidance for data science and analytics workflows.",
+  "version": "1.0.0",
+  "author": "Hiroyuki Odake (@dakesan)",
+  "repository": "https://github.com/dakesan/marimo-cc",
+  "license": "Apache-2.0",
+  "keywords": [
+    "marimo",
+    "notebooks",
+    "data-science",
+    "reactive",
+    "visualization",
+    "analytics"
+  ]
+}

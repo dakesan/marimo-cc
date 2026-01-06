@@ -1,0 +1,20 @@
+{
+  "name": "marimo-marketplace",
+  "owner": {
+    "name": "Hiroyuki Odake",
+    "email": "odake@example.com",
+    "github": "dakesan"
+  },
+  "metadata": {
+    "description": "A marketplace for marimo reactive notebook tools and skills for Claude Code",
+    "version": "1.0.0",
+    "pluginRoot": "./plugins"
+  },
+  "plugins": [
+    {
+      "name": "marimo-editor",
+      "source": "./plugins/marimo-editor",
+      "description": "Create and edit marimo reactive notebooks with best practices. Provides comprehensive guidance for data science and analytics workflows using marimo's reactive programming model."
+    }
+  ]
+}

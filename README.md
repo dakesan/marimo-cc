@@ -1,28 +1,47 @@
-# marimo-cc
+# marimo-cc Marketplace
 
-Marimo reactive notebook integration for Claude Code
+A Claude Code plugin marketplace for marimo reactive notebook tools and skills.
 
 ## Overview
 
-This plugin provides a specialized skill for creating and editing marimo reactive notebooks with Claude Code. It helps you build efficient data science and analytics workflows using marimo's reactive programming model.
+This marketplace provides curated plugins and skills for creating and editing marimo reactive notebooks with Claude Code. It helps you build efficient data science and analytics workflows using marimo's reactive programming model.
 
-**Note:** Most of the prompts and instructions used in this skill are transplanted from the original [marimo](https://github.com/marimo-team/marimo) prompts. This project inherits the Apache 2.0 License from marimo.
+**Note:** Most of the prompts and instructions used in these plugins are transplanted from the original [marimo](https://github.com/marimo-team/marimo) prompts. This project inherits the Apache 2.0 License from marimo.
 
-## Features
+## Available Plugins
 
+### marimo-editor
+
+Create and edit marimo reactive notebooks with best practices.
+
+**Features:**
 - Create new marimo notebooks
 - Convert Jupyter notebooks to marimo
 - Implement reactive patterns and UI components
 - Build interactive data visualizations
 - Generate code following marimo best practices
 
+**Key capabilities:**
+- Understanding marimo's reactive programming model
+- Proper use of UI elements
+- Data handling best practices
+- Integration with visualization libraries (matplotlib, plotly, altair)
+- SQL (DuckDB) support
+
 ## Installation
 
-### Install from GitHub
+### Add the marketplace to Claude Code
 
 ```bash
-# Install the plugin with Claude Code
-claude plugin install https://github.com/dakesan/marimo-cc
+# Add the marimo-cc marketplace
+/plugin marketplace add dakesan/marimo-cc
+```
+
+### Install a specific plugin
+
+```bash
+# Install the marimo-editor plugin
+/plugin install marimo-editor@marimo-marketplace
 ```
 
 ### Install from local directory
@@ -31,13 +50,16 @@ claude plugin install https://github.com/dakesan/marimo-cc
 # Clone the repository
 git clone https://github.com/dakesan/marimo-cc.git
 
-# Install as a local plugin
-claude plugin install ./marimo-cc
+# Add as a local marketplace
+/plugin marketplace add ./marimo-cc
+
+# Install a plugin from local marketplace
+/plugin install marimo-editor@marimo-marketplace
 ```
 
 ## Usage
 
-After installation, the skill will automatically activate when you make requests like:
+After adding the marketplace and installing a plugin, it will automatically activate when you make requests like:
 
 - "Create a marimo notebook"
 - "Convert this Jupyter notebook to marimo"
@@ -73,18 +95,22 @@ plt.scatter(x, y)
 plt.gca()
 ```
 
-## Skill Details
+## Marketplace Structure
 
-### marimo-editor
-
-Supports creating and editing marimo reactive notebooks.
-
-**Key capabilities:**
-- Understanding marimo's reactive programming model
-- Proper use of UI elements
-- Data handling best practices
-- Integration with visualization libraries (matplotlib, plotly, altair)
-- SQL (DuckDB) support
+```
+marimo-cc/
+├── .claude-plugin/
+│   └── marketplace.json           # Marketplace definition
+├── plugins/
+│   └── marimo-editor/
+│       ├── .claude-plugin/
+│       │   └── plugin.json        # Plugin manifest
+│       └── skills/
+│           └── marimo-editor/
+│               └── SKILL.md       # Skill definition
+├── LICENSE
+└── README.md
+```
 
 ## Requirements
 
@@ -98,7 +124,12 @@ uv pip install marimo
 
 ## Contributing
 
-Pull requests and issues are welcome!
+Pull requests and issues are welcome! If you'd like to add more plugins to this marketplace:
+
+1. Create a new directory under `plugins/`
+2. Add your plugin with proper `.claude-plugin/plugin.json`
+3. Update `.claude-plugin/marketplace.json` to include your plugin
+4. Submit a pull request
 
 ## License
 
@@ -117,8 +148,9 @@ Hiroyuki Odake ([@dakesan](https://github.com/dakesan))
 - [marimo Official Site](https://marimo.io/)
 - [marimo Documentation](https://docs.marimo.io/)
 - [marimo GitHub](https://github.com/marimo-team/marimo)
-- [This Plugin Repository](https://github.com/dakesan/marimo-cc)
+- [Claude Code Documentation](https://code.claude.com/)
+- [This Marketplace Repository](https://github.com/dakesan/marimo-cc)
 
 ## Acknowledgments
 
-Special thanks to the [marimo team](https://github.com/marimo-team) for creating marimo and providing the original prompts and instructions that this skill is based on.
+Special thanks to the [marimo team](https://github.com/marimo-team) for creating marimo and providing the original prompts and instructions that this marketplace is based on.
