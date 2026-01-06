@@ -1,6 +1,14 @@
 ---
 name: marimo-inspect
-description: This skill should be used when inspecting marimo notebook execution results by reading HTML snapshots from the __marimo__ directory.
+description: |
+  This skill should be used when inspecting marimo notebook execution results.
+
+  Triggers include:
+  - Checking notebook output
+  - Viewing execution results
+  - Reading __marimo__ HTML snapshots
+  - Debugging notebook errors
+  - Verifying cell outputs
 ---
 
 # Marimo Notebook Inspector

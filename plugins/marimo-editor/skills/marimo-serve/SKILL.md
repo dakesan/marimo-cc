@@ -1,6 +1,13 @@
 ---
 name: marimo-serve
-description: This skill should be used when starting a marimo development server with hot reload for interactive notebook development and testing.
+description: |
+  This skill should be used when starting a marimo development server with hot reload.
+
+  Triggers include:
+  - Starting marimo server
+  - Running marimo notebooks locally
+  - Launching marimo development environment
+  - Setting up hot reload for notebooks
 ---
 
 # Marimo Development Server
